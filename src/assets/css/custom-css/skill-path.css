@@ -1,0 +1,259 @@
+.skill-path-left {
+    float: left;
+    width: 290px;
+    background: #f2f2f2;
+    padding-bottom: 46px;
+    max-height: 100%;
+    min-height: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.skill-path-left .skill-path-left-heading{
+    display: block;
+    text-align: center;
+    padding: 25px 10px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #3d4758;
+    font-weight: bold;
+}
+.skill-path-left-list{
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    overflow: auto;
+}
+.skill-path-left-list .skill-path-left-list-li{
+    float: left;
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 18px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: relative;
+}
+.skill-path-left-list .skill-path-left-list-li.active {
+    border-left: 4px solid #f36363;
+}
+.skill-path-left-list .skill-path-left-list-li:first-child:before {
+    display: none;
+}
+.skill-path-left-list .skill-path-left-list-li:before {
+    position: absolute;
+    top: -20px;
+    width: 1px;
+    height: 20px;
+    content: '';
+    border-left: 1px dashed #3d4758;
+    left: 50%;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items{
+    display: inline-block;
+    min-width: 200px;
+    max-width: 200px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-top{
+    float: left;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-top .sp-top-bg{
+    float: left;
+    width: 100%;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-top .tech-top-position{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0px;
+    bottom: 0px;
+    text-align: center;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-top .tech-top-position .tech-image{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(168, 180, 200, 0.5);
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-top .tech-top-position .tech-image .tech-user-img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-top .tech-top-position .tech-top-heading{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-bottom{
+    float: left;
+    width: 100%;
+    position: relative;
+    background: #ffffff;
+    border-radius: 0 0 5px 5px;
+    padding: 5px;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-bottom .label-tech{
+    display: inline-block;
+    position: absolute;
+    min-width: 112px;
+    top: -10px;
+    background: #ffffff;
+    border-radius: 25px;
+    font-size: 9px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #9da1a7;
+    left: 50%;
+    margin-left: -56px;
+    padding: 2px 10px;
+    font-weight: 500;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-bottom .skill-level-list{
+    float: left;
+    width: 100%;
+    padding: 10px 0 0 3px;
+    margin: 0px;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-bottom .skill-level-list .skill-level-li{
+    float: left;
+    width: 50%;
+    padding: 0px 5px;
+    margin: 0px;
+    list-style: none;
+    text-align: center;
+    border-right: 1px solid #cccccc;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-bottom .skill-level-list .skill-level-li:last-child{
+    border-right: 0px solid #cccccc;
+}
+.skill-path-left-list .owl-carousel .owl-item img{
+    width: auto;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-bottom .skill-level-list .skill-level-li .sl-title{
+    display: block;
+    font-size: 9px;
+    color: #9da1a7;
+    margin-bottom: 8px;
+    margin-top: 2px;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-bottom .skill-level-list .skill-level-li .skill-value{
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-bottom .skill-level-list .skill-level-li .skill-value .sk-value-img{
+    float: left;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+.skill-path-left-list .skill-path-left-list-li .sp-inner-items .sp-inn-bottom .skill-level-list .skill-level-li .skill-value span{
+    font-size: 14px;
+    color: #3d4758;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.skill-path-left-list .owl-carousel-skill-path .owl-nav {
+    display: inline-block;
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    min-width: 100px;
+    margin: 0px;
+    margin-left: -50px;
+    z-index: 2;
+}
+
+.skill-path-left-list .owl-carousel-skill-path .owl-nav .owl-prev {
+    background: url(../../img/prev-arrow.png) no-repeat 50% 50%;
+    background-size: 18px;
+    background-color: transparent;
+    color: transparent;
+    margin: 0px;
+    padding: 5px 0px;
+    float: left;
+}
+
+.skill-path-left-list .owl-carousel-skill-path .owl-nav .owl-next {
+    background: url(../../img/next-arrow.png) no-repeat 50% 50%;
+    background-size: 18px;
+    background-color: transparent;
+    color: transparent;
+    margin: 0px;
+    padding: 5px 0px;
+    float: right;
+}
+
+.skill-path-left-list .owl-carousel-skill-path .owl-nav [class*='owl-'].disabled {
+    opacity: 0.5;
+}
+
+.skill-path-left-list .owl-carousel-skill-path .owl-nav [class*='owl-'] {
+    opacity: 1;
+}
+.skill-path-left-list .owl-theme .owl-dots .owl-dot span{
+    width: 6px;
+    height: 6px;
+    margin: 5px 2px;
+    background: #ffffff;
+}
+.skill-path-left-list .owl-theme .owl-dots .owl-dot.active span, .skill-path-left-list .owl-theme .owl-dots .owl-dot:hover span{
+    background: #3d4657;
+}
+.skill-path-left-list .owl-theme .owl-dots{
+    position: absolute;
+    bottom: -30px;
+    left: 0px;
+    width: 100%;
+}
+
+.skill-path-right {
+    display: block;
+    padding: 0 0;
+    overflow: hidden;
+    height: 100%;
+    background: #f9f9f9;
+}
+.skill-path-right .sp-right-inner{
+    float: left;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    margin-top: 0px;
+}
+.skill-path-right .sp-right-inner .skill-path-right-table{
+    float: left;
+    width: 100%;
+    /* overflow: auto;
+    height: 100%; */
+    padding: 0 20px 65px;
+}

@@ -1,0 +1,28 @@
+.theme1 .wrapper {
+  background: #f5f5f7;
+}
+
+#loginDiv {
+  background: #474170;
+}
+
+#loginDiv .panel-title h2 {
+  color: #fff;
+}
+
+.navbar-right#login_page li {
+  border: none !important;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.theme1 .navbar-right#login_page,
+.theme1 .navbar-right#login_page > li:nth-child(4),
+.theme1 .navbar-right#login_page > li:nth-child(6),
+.theme1 .navbar-right#login_page > li:nth-child(2) {
+  border: none !important;
+}
+
+#login_page {
+  min-width: auto !important;
+}/*# sourceMappingURL=deeplink_Login.css.map */

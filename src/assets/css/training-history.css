@@ -1,0 +1,106 @@
+
+/*============Switch Button Style Start=================*/
+.learner_listing .switch {
+    display: inline-block;
+    height: 13px;
+    position: relative;
+    width: 30px;    
+    margin: -2px;
+}
+
+.learner_listing .switch input {
+    display: none;
+}
+
+.learner_listing .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: -8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.learner_listing .slider:before {
+    bottom: -3px;
+    content: "";
+    height: 20px;
+    left: -1px;
+    position: absolute;
+    transition: .4s;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #3d4758;
+}
+
+.learner_listing input:checked+.slider {
+    /* background-color: #137e43; */
+    background-color: #ccc !important;
+}
+
+.learner_listing input:checked+.slider:before {
+    transform: translateX(21px);
+    /* background-color: #11772a; */
+    background-color: #3d4758 !important;
+}
+
+/*============Switch Button Style End====================*/
+
+
+.history_container .listing_txt {
+    display: inline-block;
+    float: none;
+    color: #fff;
+    padding-left: 5px;
+    width: 30%;
+}
+
+.history_container .listing_txt.sOne {
+    margin-right: 0%;
+    text-align: left;
+    float: left;
+    width: 20%;
+    padding-right: 3px;
+}
+
+.history_container .listing_icons {
+    display: inline-block;
+    float: none;
+    width: 30%;
+}
+
+.history_container .listing_icons.sSec {
+    float: left;
+    margin: 10px;
+    width: 30%;
+}
+
+.history_container .learner_listing {
+    /*width: 32%;*/
+    margin-left: 1%;
+}
+
+.drpbox_wrap {
+    width: 100%;
+    display: block;
+}
+.drpbox_wrap .drpbox {
+    background: #eef0f3;
+    border-radius: 4px;
+    color: gray;
+    position: relative;
+    font-size: 14px;
+    box-shadow: 3px 2px 5px #bbb!important;
+}
+.dropdown-menu{
+    padding: 10px;
+}
+.dropdown-menu li:hover{
+    background-color: #ccc;
+}
+.section_btn a{
+    color: gray;
+}

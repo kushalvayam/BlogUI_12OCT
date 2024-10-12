@@ -1,0 +1,120 @@
+.assignment-header-span {
+    line-height: 45px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.pop-cross-icon-custom {
+    position: absolute;
+    top: 20px;
+    left: 95%;
+    margin-top: -20px;
+    background: #ffffff url(../img/cross-icon.png) no-repeat 50% 50%;
+    background-size: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 0%;
+}
+
+.fa-report-abuse {
+    color: #f36464 !important;
+    cursor: default !important;
+}
+
+.row-padding {
+    padding-bottom: 60px !important;
+}
+
+.iframe-help {
+    width: 100%;
+    min-height: 660px;
+}
+
+.topicFlag {
+    float: right;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.c-radio #spanAnchor,
+.c-checkbox #spanAnchor {
+
+    display: unset !important;
+    margin-left: 0px !important;
+    border: 0px solid !important;
+}
+
+.c-checkbox .fa {
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 15px;
+    height: 15px;
+    float: left;
+}
+
+.c-radio .fa {
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 15px;
+    height: 15px;
+}
+
+.c-checkbox span,
+.c-radio span {
+    position: relative;
+    vertical-align: top;
+    margin-right: 5px;
+    border: 0px solid;
+}
+
+.ans-img {
+    width: auto !important;
+    max-width: 92%;
+}
+
+#langDropDown {
+    z-index: 1001 !important;
+}
+
+#profileMenu {
+    z-index: 1001 !important;
+}
+
+#notificationDiv {
+    z-index: 1000 !important;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+
+.alignMe .winstar-tooltip {
+    left: 0px !important;
+}
+
+.navbar-right {
+    min-width: 390px !important;
+}
+
+.catalogue-Section {
+    margin-left: auto;
+}
+
+.webinar-Section {
+    margin-left: auto;
+}
+
+.play-li-didabled {
+    border-left: 1px solid #f3f3f3 !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
+}
+
+a.fc-more {
+    font-size: 9px !important;
+    font-weight: 500;
+    text-transform: uppercase;
+}

@@ -1,0 +1,70 @@
+.assessment_type_bg
+    {
+        background: #5d9cec;
+        opacity: .8;
+    }
+
+    .training_typ_bg{
+        background: #7276e2;
+        opacity: .8;
+    }
+
+    .assignment_type_bg
+    {
+        background:#C9C9C9;
+        opacity: .8;
+    }
+    .checklist_type_bg
+    {
+        background:#FFCC00;
+        opacity: .8;
+    }
+    .yellow_dark_bg {
+        background: #ded600;
+        opacity: 0.8;
+    }
+    .elearning_type_bg
+    {
+        background:#B7F6A1;
+        opacity: .8;
+    }
+
+    .icons_assessment {
+        background: url("../../../assets/img/icons/icon-assessment.png") no-repeat center;
+        width: 19px;
+        height: 19px;
+        display: inline-block;
+        background-size: 100% 100%;
+    }
+
+    .icons_training {
+        background: url("../../../assets/img/icons/icon-training.png") no-repeat center;
+        width: 19px;
+        height: 19px;
+        display: inline-block;
+        background-size: 100% 100%;
+    }
+
+    .icons_assignment {
+        background: url("../../../assets/img/icons/icon-assignment.png") no-repeat center;
+        width: 19px;
+        height: 19px;
+        display: inline-block;
+        background-size: 100% 100%;
+    }
+
+    .icons_checklist {
+        background: url("../../../assets/img/icons/icon-checklist.png") no-repeat center;
+        width: 19px;
+        height: 19px;
+        display: inline-block;
+        background-size: 100% 100%;
+    }
+
+    .icons_elearning {
+        background: url("../../../assets/img/icons/icon-elearning.png") no-repeat center;
+        width: 19px;
+        height: 19px;
+        display: inline-block;
+        background-size: 100% 100%;
+    }

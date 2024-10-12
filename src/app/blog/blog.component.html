@@ -1,0 +1,30 @@
+<div style="width: 100%; margin-left: 5%;margin-top:10px;">
+    <span>Blog Management</span>
+    <br>
+    <br>
+    <span *ngIf="!editingPost">Add New Post</span>
+    <span *ngIf="editingPost">Edit Post</span>
+    <br>
+    <br>
+    <form (ngSubmit)="editingPost ? updatePost() : addPost()">
+      <input style="width: 900px;" [(ngModel)]="editingPost ? editingPost.Created : newPost.Created"  name="Created" placeholder="UserName" required />
+      <br>
+      <br>
+      <textarea style="width: 900px;" [(ngModel)]="editingPost ? editingPost.Text : newPost.Text" name="Text" placeholder="Text" required></textarea>
+      <br>
+      <br>
+      <button type="submit">{{ editingPost ? 'Update Post' : 'Add Post' }}</button>
+    </form>
+  <br>
+    <span style="font-weight: bold;">Posts</span>
+    <ul style="width: 100%;">
+       <li *ngFor="let item of BrfCsLst" style="width: 100%;">
+        <p>{{item['text']}}</p>
+        <span style="width:50%;">Created: {{item['created']}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="width:50%;">Craeted date:{{item['createdDate'] |date:"dd/mm/yyyy"}}</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button (click)="editPost(item)" style="margin-left: 450px;">Edit</button>&nbsp;&nbsp;
+        <button (click)="deletePost(item['id'])" style="margin-left:10px;">Delete</button>
+      </li> 
+    </ul>
+  </div>

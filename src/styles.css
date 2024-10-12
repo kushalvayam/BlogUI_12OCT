@@ -1,0 +1,191 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("../node_modules/devextreme/dist/css/dx.light.css");
+@import url("../node_modules/devexpress-richedit/dist/dx.richedit.css");
+@import url("../node_modules/@devexpress/analytics-core/dist/css/dx-analytics.common.css");
+@import url("../node_modules/@devexpress/analytics-core/dist/css/dx-analytics.light.css");
+@import url("../node_modules/@devexpress/analytics-core/dist/css/dx-querybuilder.css");
+@import url("../node_modules/devexpress-dashboard/dist/css/dx-dashboard.light.css");
+
+.shop-full-details{
+    float: left;
+    width: 100%;
+    height: 100% !important;
+    position: relative;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #ffffff;    
+}
+.shop-full-details .cross-button{
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url(./assets/img/cross-icon-white.png) no-repeat 50% 50%;
+    background-size: 18px;
+    background-color: #0f0e0e;
+    z-index: 4;
+}
+.shop-full-details .image-slider{
+    float: right;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.shop-full-details .image-slider .button-group{
+    float: left;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    text-align: center;
+    z-index: 2;
+}
+.shop-full-details .image-slider .button-group a{
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: 'montserratmedium';
+    text-align: center;
+    padding: 8px 15px;
+    -webkit-transition: ease-in-out all 0.5s;
+    -o-transition: ease-in-out all 0.5s;
+    transition: ease-in-out all 0.5s;
+    text-transform: uppercase;
+    border-radius: 25px;
+    min-width: 110px;
+}
+.shop-full-details .image-slider .button-group a.white-button{
+    color: #3d4758;
+    background: #ffffff;
+}
+.shop-full-details .image-slider .button-group a.white-button:hover{
+    background: #e7e7e7;
+}
+.shop-full-details .image-slider .button-group a.black-button{
+    color: #ffffff;
+    background: #3d4758;
+}
+.shop-full-details .image-slider .button-group a.black-button:hover{
+    color: #3d4758;
+    background: #e7e7e7;
+}
+
+
+
+.shop-full-details .left-box {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 15px;
+}
+.shop-full-details .left-box .title{
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+.shop-full-details .left-box .title span{
+    display: inline-block;
+    font-size: 13px;
+    color: #3d4758;
+    font-family: 'montserratbold';
+    font-weight: bold;
+    padding-right: 40px;
+    position: relative;
+}
+.shop-full-details .left-box .title span .anmi-heart{
+    left: auto;
+    right: -10px;
+    top: -15px;
+}
+.shop-full-details .left-box .title span .anmi-heart:before{
+    border: 1px solid #f47676;
+}
+.shop-full-details .left-box .description{
+    float: left;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.shop-full-details .left-box .description .des-label{
+    float: left;
+    width: 100%;
+    font-size: 11px;
+    font-family: 'montserratmedium';
+    color: #afb2b7;
+    margin-bottom: 5px;
+}
+.shop-full-details .left-box .description .des-text{
+    float: left;
+    width: 100%;
+    font-size: 11px;
+    font-family: 'montserratmedium';
+    color: #3d4758;
+    margin-bottom: 0px;
+    max-height: 80px;
+    overflow: auto;
+}
+.shop-full-details .left-box .bottom-list{
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.shop-full-details .left-box .bottom-list li{
+    float: left;
+    width: 33.3%;
+    padding: 0px 5px 0 0;
+    margin: 0px;
+    list-style: none;
+}
+.shop-full-details .left-box .bottom-list li .list-label{
+    float: left;
+    width: 100%;
+    font-size: 11px;
+    font-family: 'montserratmedium';
+    color: #afb2b7;
+    margin-bottom: 5px;
+}
+.shop-full-details .left-box .bottom-list li .bottom-text{
+    float: left;
+    width: 100%;
+    font-size: 11px;
+    font-family: 'montserratmedium';
+    color: #3d4758;
+    font-weight: bold;
+}
+.shop-full-details .left-box .bottom-list li .bottom-text .star-icon{
+    float: left;
+    background: url(./assets/img/star-icon.png) no-repeat 0px 0px;
+    background-size: 14px;
+    width: 20px;
+    height: 14px;
+    margin-top: 1px;
+}
+.shop-full-details .ui-dialog-titlebar {
+    display:none;
+}
+
+.ui-widget-content {
+    border:none !important;
+    /* background-color: #afb2b7; */
+    background-color: #fff !important;
+}
+
+.ui-dialog .ui-dialog-content{
+    padding: 0em !important;
+}
+.ui-dialog {
+    height: 50% !important;
+    width: 810px !important;
+    top: 120.5px;
+    left: 558px !important;
+    display: block;
+   
+}

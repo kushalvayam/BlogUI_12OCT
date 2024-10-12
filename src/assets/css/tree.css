@@ -1,0 +1,180 @@
+/* You can add global styles to this file, and also import other style files */
+ul[role="tree"] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 120%;
+}
+
+/*[role="treeitem"].doc:before {
+    content: url(../assets/file.png);
+}*/
+
+[role="treeitem"][aria-expanded="false"] > ul {
+  display: none;
+}
+
+[role="treeitem"][aria-expanded="true"] > ul {
+  display: block;
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+[role="treeitem"][aria-expanded="false"] > span:before {
+  /*content: url(../assets/closed.png);*/
+  padding-right: 5px;
+}
+
+[role="treeitem"][aria-expanded="true"] > span:before {
+  /*content: url(assets/open.png);*/
+}
+
+[role="treeitem"],
+[role="treeitem"] span {
+  /*width: 9em;
+  margin: 0;
+  padding: 0;
+  border: 2px transparent solid;
+  padding: 0.125em;
+  display: block;*/
+}
+
+/* disable default keyboard focus styling for treeitems
+   Keyboard focus is styled with the following CSS */
+[role="treeitem"]:focus {
+  outline: 0;
+}
+
+
+[role="treeitem"].focus,
+[role="treeitem"] span.focus {
+  /*border-color: black;
+  background-color: #EEEEEE;*/
+}
+
+[role="treeitem"].hover,
+[role="treeitem"] span:hover {
+  /*background-color: #DDDDDD;*/
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.containerNoCheckbox {
+    font-weight: normal !important;
+    font-size: 11px !important;
+    display: block;
+    position: relative;
+    padding-left: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.cLabel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    /*left: 0px;*/
+    z-index: 1;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    height: 15px;
+    width: 15px;
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 4px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.item {
+    list-style-type: none;
+    padding-block-start: 10px;
+    padding-inline-start: 0px;
+    margin-top: -25px;
+}
+
+.folder {
+    position: relative;
+    top: 19px;
+    left: 0px;
+    font-size: 13px
+}
+
+.liClass {
+    padding-left: 10px;
+}
+
+.cLabel {
+    padding-left: 30px !important;
+    max-width: 100%;
+    margin-bottom: 0px;
+    font-weight: normal !important;
+}
+
+/* For arabic type direction */
+body.direction-rtl .liClass {
+    padding-right: 10px;
+    padding-left: unset;
+}
+
+body.direction-rtl .cLabel {
+    padding-left: unset;
+    padding-right: 30px !important;
+}
+
+body.direction-rtl .checkmark {
+    left: unset;
+    right: 5px;
+}
